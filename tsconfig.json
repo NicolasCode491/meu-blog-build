@@ -6,6 +6,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@config": ["./sidey.config.ts"],
+      "@themeConfig": ["./src/utils/themeConfig.ts"],
       "@components/*": ["./src/components/*"],
       "@layouts/*": ["./src/layouts/*"],
       "@utils/*": ["./src/utils/*"],
