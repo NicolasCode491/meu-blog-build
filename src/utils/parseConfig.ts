@@ -1,4 +1,4 @@
-// src/utils/themeConfig.ts
+// src/utils/parseConfig.ts
 
 import { z } from "astro/zod"
 import { sideyConfig } from "@config"
