@@ -10,6 +10,10 @@ import sitemap from "@astrojs/sitemap"
 // Expressive Code
 import expressiveCode from "astro-expressive-code"
 
+// Remark Rehype Plugins
+import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs"
+import rehypeLightbox from "./src/plugins/rehype-lightbox.mjs"
+
 // https://astro.build/config
 export default defineConfig({
   devToolbar: {
@@ -23,6 +27,10 @@ export default defineConfig({
     icon(),
     sitemap(),
   ],
+  markdown: {
+    remarkPlugins: [remarkReadingTime],
+    rehypePlugins: [rehypeLightbox],
+  },
   prefetch: {
     defaultStrategy: "viewport",
     prefetchAll: true,
