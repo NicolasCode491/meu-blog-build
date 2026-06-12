@@ -8,7 +8,7 @@ import icon from "astro-icon"
 import sitemap from "@astrojs/sitemap"
 
 // Expressive Code
-import expressiveCode from "astro-expressive-code"
+import astroExpressiveCode from "astro-expressive-code"
 
 // Remark Rehype Plugins
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs"
@@ -22,14 +22,7 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  integrations: [
-    expressiveCode({
-      themes: ["monokai"],
-    }),
-    mdx(),
-    icon(),
-    sitemap(),
-  ],
+  integrations: [astroExpressiveCode(), mdx(), icon(), sitemap()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: [rehypeLightbox],
