@@ -24,11 +24,11 @@ const { title, description, image } = Astro.props
 
   <body class="antialiased">
     <div
-      class="mx-auto grid min-h-svh w-full max-w-3xl grid-cols-1 px-4 sm:min-h-screen md:grid-cols-[1fr_4fr] md:gap-8 md:px-8 md:pr-8"
+      class="mx-auto flex min-h-svh w-full max-w-3xl flex-col px-4 sm:min-h-screen md:grid md:grid-cols-[1fr_4fr] md:gap-8 md:px-8 md:pr-8"
     >
       <Sidebar />
 
-      <div class="flex min-w-0 animate-slide-in flex-col py-8 md:mt-8">
+      <div class="flex min-w-0 grow animate-slide-in flex-col py-8 md:mt-8">
         <main class="grow">
           <slot />
         </main>
