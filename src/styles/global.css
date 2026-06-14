@@ -296,7 +296,7 @@
   }
 
   .heading-anchor::before {
-    @apply absolute -left-4 text-muted-foreground/25 transition-colors duration-200 ease-out;
+    @apply absolute -left-4 hidden text-muted-foreground/25 transition-colors duration-200 ease-out md:block;
     content: "#";
   }
 
