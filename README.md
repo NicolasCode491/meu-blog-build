@@ -1,57 +1,42 @@
-# Astro Sidey
+# Meu Blog (Astro Sidey)
 
-A content-focused, side-anchored minimalist theme designed for developers,
-writers, and digital gardeners. Built on Astro. Nothing in the way, just your
-words on a clean, fast canvas.
-
-**[Live Demo](https://sidey.odhyp.com)** · **[Getting Started](https://sidey.odhyp.com/writings/1-getting-started)**
+Blog pessoal em pt-BR baseado no tema Astro Sidey. Foco em textos, interface
+minimalista e navegacao simples.
 
 ---
 
-## Features
+## Recursos
 
-- **Minimal by design** — few files, little styling, easy to modify
-- **Typography first** — set in [Geist](https://vercel.com/font) with a clean, readable prose layout
-- **Flexoki color scheme** — a warm, paper-like palette for comfortable reading in light/dark mode
-- **Expressive Code** — syntax highlighting with line numbers and collapsible sections
-- **Image lightbox** — click any image to open it full screen
-- **Auto-generated routes** — folder structure maps directly to URLs
-- **Single config file** — everything lives in `sidey.config.ts`
-- **View Transitions** — smooth client-side navigation
-- **RSS Feed & Sitemap** — generated automatically from your content
-- **MDX support** — use components inside your markdown
+- **Conteudo em MDX** com componentes reutilizaveis
+- **Rotas automaticas** a partir da estrutura de pastas
+- **RSS** gerado automaticamente em `/rss.xml`
+- **Layout minimalista** voltado para leitura
+- **Datas em pt-BR** (fuso America/Sao_Paulo)
 
-## Quick Start
-
-Click **Use this template** on GitHub to create a new repository, then:
+## Como rodar
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
 npm install
 npm run dev
 ```
 
-Open `sidey.config.ts` and fill in your details. That is the whole setup.
+Abra `http://localhost:4321` no navegador.
 
-## Content Structure
+## Estrutura de conteudo
 
-| File                               | URL                 |
-| ---------------------------------- | ------------------- |
-| `src/content/pages/home.mdx`       | `/`                 |
-| `src/content/pages/about.mdx`      | `/about`            |
-| `src/content/writings/my-post.mdx` | `/writings/my-post` |
+| Arquivo                               | URL                 |
+| ------------------------------------- | ------------------- |
+| `src/content/pages/home.mdx`          | `/`                 |
+| `src/content/pages/sobre.mdx`         | `/sobre`            |
+| `src/content/writings/1-ola-mundo.mdx`| `/writings/1-ola-mundo` |
 
-Read more about content structure at [sidey.odhyp.com/writings/2-content-structure](https://sidey.odhyp.com/writings/2-content-structure).
+Observacao: a data no frontmatter deve ficar no formato ISO `YYYY-MM-DD`.
 
-## Built With
+## Configuracao rapida
 
-- [Astro](https://astro.build)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Expressive Code](https://expressive-code.com)
-- [Geist](https://vercel.com/font)
-- [Flexoki](https://stephango.com/flexoki)
+Edite [sidey.config.ts](sidey.config.ts) para ajustar titulo do site, descricao
+e links do menu.
 
-## License
+## Licenca
 
-MIT License. See [LICENSE](./LICENSE) for details.
+MIT. Veja [LICENSE](./LICENSE) para detalhes.
