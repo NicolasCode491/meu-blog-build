@@ -13,8 +13,8 @@ export function formatDate(
   style: DateStyle = "long",
   options?: Intl.DateTimeFormatOptions
 ) {
-  return new Intl.DateTimeFormat("en-US", {
-    timeZone: "Asia/Jakarta",
+  return new Intl.DateTimeFormat("pt-BR", {
+    timeZone: "America/Sao_Paulo",
     ...dateStyles[style],
     ...options,
   }).format(date)
