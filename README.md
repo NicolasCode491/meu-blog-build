@@ -2,7 +2,7 @@
 
 Blog pessoal em pt-BR baseado no tema Astro Sidey. Foco em textos, interface
 minimalista e navegacao simples.
-
+nicolascouto.com
 ---
 
 ## Recursos
