@@ -15,7 +15,7 @@ export const sideyConfig = {
     description: "Meu site pessoal, onde compartilho meus pensamentos e projetos.",
 
     // The production domain where your site is deployed (no trailing slash)
-    url: "https://sidey.odhyp.com",
+    url: "https://nicolascode491.github.io/meu-blog-build",
 
     // Your name, utilized in copyright strings and author meta tags
     author: "Nicolas Couto",

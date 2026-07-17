@@ -57,6 +57,7 @@ export default defineConfig({
     defaultStrategy: "viewport",
     prefetchAll: true,
   },
+  base: "/meu-blog-build",
   site: sideyConfig.site.url,
   vite: {
     plugins: [tailwindcss()],
